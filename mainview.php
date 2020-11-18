@@ -70,6 +70,9 @@
            <a class="nav-link" href="main.php">Home</a>
          </li>
          <li class="nav-item pr-5">
+           <a class="nav-link" href="rsslatest.php">Latest</a>
+         </li>
+         <li class="nav-item pr-5">
            <a class="nav-link" href="catView.php?cat=Politics">Politics</a>
          </li>
          <li class="nav-item pr-5">
@@ -86,7 +89,7 @@
    </nav>
     <div class="container-fluid mx-lg-3">
       <div class="row">
-        <div class="col-xl-8 col-lg-7 px-0">
+        <div class="col-xl-8 col-lg-7 px-0 px-md-3">
           <div class="card shadow mb-4">
             <div class="card-body pb-5 pt-0 mt-0 ml-md-4 d-flex align-content-center flex-wrap position-relative">
               <article>

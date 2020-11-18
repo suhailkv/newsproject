@@ -60,7 +60,10 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
-
+#desc {
+  font-size:1.3rem;
+  font-family:'Manjari' !important;
+}
 hr {
   box-sizing: content-box;
   height: 0;

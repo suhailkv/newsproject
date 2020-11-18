@@ -101,6 +101,9 @@ if (! isset($_GET['cat'])) {
        <ul class="navbar-nav mx-auto pt-2" id="ul">
          <li class="nav-item pr-5"><a class="nav-link" href="main.php">Home</a></li>
          <li class="nav-item pr-5">
+           <a class="nav-link" href="rsslatest.php">Latest</a>
+         </li>
+         <li class="nav-item pr-5">
            <a class="nav-link <?php if (isset($p_active)) {echo $p_active;} ?>" href="catView.php?cat=Politics">Politics <?php if (isset($p_active)) {echo '<span class="sr-only">(current)</span>';} ?></a>
          </li>
          <li class="nav-item pr-5">
@@ -140,7 +143,7 @@ if (! isset($_GET['cat'])) {
                    <h4 class="pt-4"><?= $row['Heading']?></h4>
                  </div>
                  <div class="text-dark">
-                   <p class="pt-4"><?php $desc = substr($row['Description'],0,1000); $n = strrpos($desc,'.');echo $n; $desc = substr($desc,0,$n);  echo $desc; ?> ...&nbsp;&nbsp;&nbsp;<span class="text-primary">View more</span> </p>
+                   <p class="pt-4"><?php $desc = substr($row['Description'],0,1000); $n = strrpos($desc,'.'); $desc = substr($desc,0,$n);  echo $desc; ?> ...&nbsp;&nbsp;&nbsp;<span class="text-primary">View more</span> </p>
                  </div>
                </a>
              </article>
